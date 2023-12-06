@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--Fin de Boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="icon" href="imagenes/Logo Suvica.ico">
+    
+    <title>SUVICA</title>
+</head>
+
+<body>
+<header class="header-content container-fluid d-flex">
+    
+        <i class="icons bi bi-telephone-forward"><a href="#">Tel: (0351) 15878-9853</a></i>
+        <i class=" icons bi bi-geo-alt"><a href="https://maps.app.goo.gl/RAypH3y9m85NVqaa9" target="_blank">Alto Villasol - Córdoba Argentina</a></i>
+        <a class="cart" onclick="abrirCarritoModal()">
+          <i class=" cart-i bi bi-cart"></i>
+          <span id="indicadorCarrito" class="indicador-carrito"></span>
+        </a>
+        <a href="index.html" class="logo"><img src="./imagenes/Logo Suvica_sin fondo.png" alt="Logo de la marca"></a>
+
+</header>
+ <!-- -->
+<nav class="navbar bg-body-tertiarys">
+    <div class="container-fluid container-1">
+
+      <!--Boton de categorias-->
+      <button class="dropdown-toggler d-flex rounded-0" type="button" data-bs-toggle="dropdown" >
+        <a class="nav-link dropdown-toggle" href="#" role="button">
+          <svg xmlns="http://www.w3.org/2000/svg" height="25px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>Categorías</a>
+      </button>
+
+      <ul class="dropdown-menu">
+          <li>
+            <h5>Librería:</h5>
+            <div class="col menu-des">
+              <a class="dropdown-item" href="./pages/abrochadoras.html">Abrochadoras y ganchos</a>
+              <a class="dropdown-item" href="./pages/adhesivos.html">Adhesivos</a>
+              <a class="dropdown-item" href="./pages/bandas.html">Bandas elasticas</a>
+              <a class="dropdown-item" href="./pages/biblioratos.html">Biblioratos</a>
+              <a class="dropdown-item" href="./pages/blocks.html">Blocks y repuestos</a>
+            </div>
+            <div class="col menu-des">
+              <a class="dropdown-item" href="./pages/broches.html">Broches</a>
+              <a class="dropdown-item" href="./pages/cajas-archivo.html">Cajas de archivo</a>
+              <a class="dropdown-item" href="./pages/calculadoras.html">Calculadoras</a>
+              <a class="dropdown-item" href="./pages/carpetas.html">Carpetas</a>
+              <a class="dropdown-item" href="./pages/cintas.html">Cintas</a>
+            </div>
+            <div class="col menu-des">
+              <a class="dropdown-item" href="./pages/correctores.html">Correctores</a>
+              <a class="dropdown-item" href="./pages/cuadernos.html">Cuadernos</a>
+              <a class="dropdown-item" href="./pages/escritura.html">Escritura</a>
+              <a class="dropdown-item" href="./pages/folios.html">Folios</a>
+              <a class="dropdown-item" href="./pages/gomas-sacapuntas.html">Gomas y sacapuntas</a>
+            </div>
+            <div class="col menu-des">
+              <a class="dropdown-item" href="./pages/notas.html">Notas autoadhesivas</a>
+              <a class="dropdown-item" href="./pages/papeleria.html">Papelería</a>
+              <a class="dropdown-item" href="./pages/perforadoras.html">Perforadores</a>
+              <a class="dropdown-item" href="./pages/pizarras.html">Pizarras</a>
+              <a class="dropdown-item" href="./pages/portablocks.html">Portablocks</a>
+            </div>
+            <div class="col menu-des">
+              <a class="dropdown-item" href="./pages/resmas.html">Resmas</a>
+              <a class="dropdown-item" href="./pages/rollo-termico.html">Rollos</a>
+              <a class="dropdown-item" href="./pages/sobres.html">Sobres</a>
+              <a class="dropdown-item" href="./pages/talonarios.html">Talonarios</a>
+              <a class="dropdown-item" href="./pages/tijeras.html">Tijeras</a>
+            </div>
+            <div class="col menu-des">
+              <a class="dropdown-item" href="./pages/tintas.html">Tintas</a>
+            </div>
+          </li>
+          
+          <li>
+            <h5>Insumos de computación:</h5>
+            <div class="col menu-des">
+              <a class="dropdown-item" href="./pages/cartuchos.html">Cartuchos</a>
+              <a class="dropdown-item" href="./pages/perifericos-otros.html">Periféricos y otros</a>
+              <a class="dropdown-item" href="./pages/tintas-comp.html">Tintas</a>
+              <a class="dropdown-item" href="./pages/toner.html">Toner</a>
+            </div>
+          </li>
+        </ul>
+      <!--Fin de boton de categorias-->
+      <div class="col d-flex">
+      <a class="navbar-brand" href="./pages/resmas.html">Resmas</a>
+      <a class="navbar-brand" href="./pages/toner.html">Toner</a>
+      <a class="navbar-brand" href="./pages/pizarras.html">Pizarras</a>
+      <a class="navbar-brand" href="./pages/abrochadoras.html">Abrochadoras y ganchos</a>
+      <a class="navbar-brand" href="./pages/rollo-termico.html">Rollo térmico</a>
+      <a class="navbar-brand" href="./pages/escritura.html">Escritura</a>
+      </div>
+  </nav>
+
+<!-- Carrusel -->
+  <article>
+    <section>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./imagenes/css.jpg" class="d-block w-100" alt="imagen promocional">
+        </div>
+        <div class="carousel-item active">
+          <img src="./imagenes/css2.jpg" class="d-block w-100" alt="imagen promocional 2">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/css3.jpg" class="d-block w-100" alt="imagen promocional 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+<!-- Fin de Carrusel -->
+
+<!-- Adds (sitio seguro, envios, redes) -->
+
+    <div class="adds">
+      <div class="d-flex">
+      <i class="bi bi-truck"></i>
+      <p>Envíos a domicilio</p>
+    </div>
+    <div class="d-flex">
+      <i class="bi bi-shield-check"></i>
+      <p>Sitio seguro</p>
+    </div>
+    <div class="redes">
+      <a href="https://instagram.com/suvicaexpress?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61551866685297&mibextid=LQQJ4d" target="_blank"><i class="bi bi-facebook"></i></a>
+      <a href="https://wa.link/jslxdt" target="_blank"><i class="bi bi-whatsapp"></i></a>
+    </div>
+    </div>
+<!-- Termina Adds (sitio seguro, envios, redes) -->
+
+ <main id="main">
+<!-- Swiper -->
+<div class="contenedor-sliders1">
+  <div class="swiper mySwiper">
+    <h2 class="title">¡Los mas vendidos!</h2>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide swiperSL">
+        <img src="imagenes/1.jpg" alt="">
+        <div class="card-description">
+          <div class="card-title">
+            <p>Descripción del proucto <br>y algo mas
+            </p>
+          </div>
+          <div class="card-link">
+            <a href="#">Ver más</a>
+        </div></div>
+        
+      </div>
+      <div class="swiper-slide">
+        <img src="imagenes/1.jpg" alt="">
+        <div class="card-description">
+        <div class="card-title">
+          <p>Descripción del proucto <br> y algo mas
+          </p>
+        </div>
+        <div class="card-link">
+          <a href="#">Ver más</a>
+        </div>
+      </div></div>
+
+      <div class="swiper-slide">
+        <img src="imagenes/1.jpg" alt="">
+        <div class="card-description">
+        <div class="card-title">
+          <p>Descripción del proucto <br> y algo mas
+          </p>
+        </div>
+        <div class="card-link">
+          <a href="#">Ver más</a>
+        </div>
+      </div></div>
+
+      <div class="swiper-slide">
+        <img src="imagenes/1.jpg" alt="">
+        <div class="card-description">
+        <div class="card-title">
+          <p>Descripción del proucto <br> y algo mas
+          </p>
+        </div>
+        <div class="card-link">
+          <a href="#">Ver más</a>
+        </div>
+      </div></div>
+
+      <div class="swiper-slide">
+        <img src="imagenes/1.jpg" alt="">
+        <div class="card-description">
+        <div class="card-title">
+          <p>Descripción del proucto <br> y algo mas
+          </p>
+        </div>
+        <div class="card-link">
+          <a href="#">Ver más</a>
+        </div>
+      </div></div>
+
+      <div class="swiper-slide slide-final">
+        <img src="imagenes/1.jpg" alt="">
+        <div class="card-description">
+        <div class="card-title">
+          <p>Descripción del proucto <br> y algo mas
+          </p>
+        </div>
+        <div class="card-link">
+          <a href="#">Ver más</a>
+        </div>
+      </div></div>
+
+    </div>
+    
+    
+  </div>
+  <div class="swiper-button-next button-swiper"></div>
+    <div class="swiper-button-prev button-swiper"></div>
+</div>
+<div class="contenedor-sliders1">
+  <div class="swiper mySwiper">
+    <h2 class="title">Librería</h2>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide swiperSL">
+        <img src="imagenes/1.jpg" alt="">
+        <div class="card-description">
+          <div class="card-title">
+            <p>Descripción del proucto <br>y algo mas
+            </p>
+          </div>
+          <div class="card-link">
+            <a href="#">Ver más</a>
+        </div></div>
+        
+      </div>
+      <div class="swiper-slide">
+        <img src="imagenes/1.jpg" alt="">
+        <div class="card-description">
+        <div class="card-title">
+          <p>Descripción del proucto <br> y algo mas
+          </p>
+        </div>
+        <div class="card-link">
+          <a href="#">Ver más</a>
+        </div>
+      </div></div>
+
+      <div class="swiper-slide">
+        <img src="imagenes/1.jpg" alt="">
+        <div class="card-description">
+        <div class="card-title">
+          <p>Descripción del proucto <br> y algo mas
+          </p>
+        </div>
+        <div class="card-link">
+          <a href="#">Ver más</a>
+        </div>
+      </div></div>
+
+      <div class="swiper-slide">
+        <img src="imagenes/1.jpg" alt="">
+        <div class="card-description">
+        <div class="card-title">
+          <p>Descripción del proucto <br> y algo mas
+          </p>
+        </div>
+        <div class="card-link">
+          <a href="#">Ver más</a>
+        </div>
+      </div></div>
+
+      <div class="swiper-slide">
+        <img src="imagenes/1.jpg" alt="">
+        <div class="card-description">
+        <div class="card-title">
+          <p>Descripción del proucto <br> y algo mas
+          </p>
+        </div>
+        <div class="card-link">
+          <a href="#">Ver más</a>
+        </div>
+      </div></div>
+
+      <div class="swiper-slide slide-final">
+        <img src="imagenes/1.jpg" alt="">
+        <div class="card-description">
+        <div class="card-title">
+          <p>Descripción del proucto <br> y algo mas
+          </p>
+        </div>
+        <div class="card-link">
+          <a href="#">Ver más</a>
+        </div>
+      </div></div>
+
+    </div>
+    
+    
+  </div>
+  <div class="swiper-button-next button-swiper2"></div>
+    <div class="swiper-button-prev button-swiper2"></div>
+</div>
+<div class="contenedor-sliders1">
+  <div class="swiper mySwiper">
+    <h2 class="title">Insumos de computación</h2>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide swiperSL">
+        <img src="imagenes/1.jpg" alt="">
+        <div class="card-description">
+          <div class="card-title">
+            <p>Descripción del proucto <br>y algo mas
+            </p>
+          </div>
+          <div class="card-link">
+            <a href="#">Ver más</a>
+        </div></div>
+        
+      </div>
+      <div class="swiper-slide">
+        <img src="imagenes/1.jpg" alt="">
+        <div class="card-description">
+        <div class="card-title">
+          <p>Descripción del proucto <br> y algo mas
+          </p>
+        </div>
+        <div class="card-link">
+          <a href="#">Ver más</a>
+        </div>
+      </div></div>
+
+      <div class="swiper-slide">
+        <img src="imagenes/1.jpg" alt="">
+        <div class="card-description">
+        <div class="card-title">
+          <p>Descripción del proucto <br> y algo mas
+          </p>
+        </div>
+        <div class="card-link">
+          <a href="#">Ver más</a>
+        </div>
+      </div></div>
+
+      <div class="swiper-slide">
+        <img src="imagenes/1.jpg" alt="">
+        <div class="card-description">
+        <div class="card-title">
+          <p>Descripción del proucto <br> y algo mas
+          </p>
+        </div>
+        <div class="card-link">
+          <a href="#">Ver más</a>
+        </div>
+      </div></div>
+
+      <div class="swiper-slide">
+        <img src="imagenes/1.jpg" alt="">
+        <div class="card-description">
+        <div class="card-title">
+          <p>Descripción del proucto <br> y algo mas
+          </p>
+        </div>
+        <div class="card-link">
+          <a href="#">Ver más</a>
+        </div>
+      </div></div>
+
+      <div class="swiper-slide slide-final">
+        <img src="imagenes/1.jpg" alt="">
+        <div class="card-description">
+        <div class="card-title">
+          <p>Descripción del proucto <br> y algo mas
+          </p>
+        </div>
+        <div class="card-link">
+          <a href="#">Ver más</a>
+        </div>
+      </div></div>
+
+    </div>
+    
+    
+  </div>
+  <div class="swiper-button-next button-swiper3"></div>
+    <div class="swiper-button-prev button-swiper3"></div>
+</div>
+
+
+
+<!-- Swiper JS -->
+
+ <a href="https://wa.link/jslxdt" class="wsp-button" target="_BLANK">
+  <i class="bi bi-whatsapp"></i>
+ </a>
+  </main>
+
+
+  <article>
+    <section class="d-flex section2">
+      <div class="info-contacto">
+        <div class="tel"><i class="bi bi-telephone-forward"><p>Atención telefónica <br> <span>(0351) 878-9853</span></p></i></div>
+        <div class="email"><i class="bi bi-envelope-at-fill"><p>Correo electrónico <br> <span>suvica.cba@gmail.com</span></p></i></div>
+        <div class="ubicacion"><i class="bi bi-geo-alt"><p>Ubicación <br> <span>Alto Villasol - Córdoba Argentina</span></p></i></div>
+        <div class="terminos-condiciones"><i class="bi bi-chat-left-dots"><p>Informate <br> <span>Términos y condiciones</span></p></i></div>
+      </div>
+    </section>
+  </article>
+
+
+
+  <footer>
+    <div class="footer-content">
+      <img src="imagenes/Logo Suvica_sin fondo.png" alt="Logo suvica footer" class="logo-footer">
+      <div class="info-extra d-flex">
+        <p>INSTITUCIONAL</p>
+        <a href="">Quienes somos</a>
+        <a href="">Contacto</a>
+        <a href="">Dónde estamos</a>
+        <a href="">Terminos y condiciones</a>
+      </div>
+      <div class="copyright"><p>Copyright 2023 | Todos los derechos reservados www.suvica.com.ar</p></div>
+    </div>
+  </footer>
+  
+ 
+
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="../js/script.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+<div id="carritoModal" class="modal">
+  <div class="modal-content" id="miModal">
+      <span class="close" onclick="cerrarCarritoModal()">&times;</span>
+      <div id="carritoContenido"></div>
+        <table class="table" id="tablaCarrito">
+          <thead>
+            <tr>
+              <th scope="col">SUVICA</th>
+              <th scope="col">Producto</th>
+              <th scope="col">Cantidad</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            
+          </tbody>
+        </table>
+        <button id="btnComprar" class="pedido" onclick="realizarCompra()">Realizar pedido<i class="bi bi-cart-check"></i></button>
+  </div>
+</div>
+</html>

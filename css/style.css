@@ -1,0 +1,787 @@
+body{
+    width: 98vw;
+}
+.header-content{
+    height: 140px;
+    width: 100%;   
+     
+}
+
+.icons{
+    color: #000;
+    position: relative;
+    top: 90px;
+    left: 50px;
+}
+
+.icons a{
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    font-style: normal;
+    font-weight: 300;
+    margin-right: 20px;
+}
+.icons a:hover{
+    text-decoration: underline;
+}
+
+.cart{
+    font-size: 25px;
+    position: relative;
+    margin-left: 52rem;
+    top: 85px;
+    width: 40px;
+    height: 40px;
+    line-height: 10px;
+    border-radius: 50%;
+    border: none;
+}
+.cart i{
+    color: #000;
+}
+.cart i:hover{
+    color: #0AA653;
+}
+
+.logo img{
+    width: 160px;
+    position: absolute;
+    left: 60px;
+    top: 30px;
+}
+
+
+
+
+
+                /*Termina HEADER*/
+
+/*---------------------------------------------------------*/
+
+                /*Comienza NAVBAR*/
+
+
+    /*ESTILOS DEL BOTON CATEGORIAS*/
+.navbar{
+    height: 55px; 
+    position: relative;
+    left: 22px;
+}
+
+.navbar .navbar-brand{
+    margin-left: 30px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.navbar .navbar-brand:hover{
+    text-decoration: underline #0AA653 3px;
+}
+
+.dropdown-toggler{
+    border: none !important;
+    background-color: #0D1348;
+    margin-left: 30px;
+    height: 60px;
+    width: 160px;
+    margin-top: -8px;
+    box-shadow: none !important;
+}
+
+.dropdown-toggler a{
+   font-size: 16px;
+   font-weight: 600;
+   margin-top: 12px;
+   margin-left: 6px;
+   color: #fff !important;
+}
+.dropdown-toggler a svg{
+   margin-bottom: 2px;
+   margin-right: 5px;
+}
+
+.dropdown-menu{
+    margin-left: 40px !important;
+    width: 62rem;
+}
+
+.menu-des{
+    display: flex;
+}
+.dropdown-menu h5{
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #0D1348;
+}
+
+
+.dropdown-menu .dropdown-item{
+   color: #000 !important;
+   font-weight: 400;
+   width: 200px;
+   margin-bottom: 10px;
+   transition: background-color 0.4s;
+}
+
+.inicio{
+    color: #0AA653 !important;
+    text-transform: uppercase;
+    font-weight: 700 !important;
+    font-size: 20px;
+}
+.dropdown-menu .dropdown-item:hover{
+    background-color: #E5E5E5;
+}
+    /*FIN DE ESTILOS DE BOTON CATEGORIAS*/
+    
+/*Termina NAVBAR*/
+
+/*---------------------------------------------------------*/
+
+
+/*Comienza CARRUSEL DE IMAGENES PROMOCIONALES*/
+
+.carousel-item img{
+    height: 250px;
+}
+/*Termina CARRUSEL DE IMAGENES PROMOCIONALES*/
+
+/*Informacion ADICIONAL (Envios, sitio seguro, redes)*/
+
+.adds{
+    height: 50px;                                  
+    width: 800px;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px #8E8E8E;
+    border-radius: 5px;
+    margin: 0 auto;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.adds p{
+    font-size: 20px;
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+
+.adds i{
+    font-size: 23px;
+    color: #0D1348;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+
+.redes a i{
+    margin: 0 20px;
+    transition: color 0.3s;
+}
+.redes a i:hover{
+    color: #0AA653;
+}
+
+/*Termina informacion ADICIONAL (Envios, sitio seguro, redes)*/
+
+
+section{
+    background-color: #E5E5E5;
+    width: 100vw;
+}
+
+/*Comienza SLIDER DE PRODUCTOS EN OFERTA*/
+
+.contenedor-sliders1{
+    height: 25rem;
+    width: 84vw;
+    margin-left: 6.3rem;
+    margin-top: 2rem;
+    
+} 
+
+.title{
+    color: #0D1348;
+    font-weight: 700;
+    font-size: 40px;
+}
+.swiper-slide {
+    width: 18rem !important;
+    height: 22rem !important;
+    background-color: #fff;
+    position: relative;
+    margin-right: 10px !important;    
+}
+
+
+.swiper-slide img {
+    margin-left: 22px;
+    border-radius: 10px;
+    height: 12rem;
+}
+
+.card-title{
+    position: relative;
+    left: 5px;
+    font-size: 20px;
+}
+
+.card-link{
+    text-align: center;
+    position: relative;
+    left: 6.4rem;
+    top: 2rem;
+    background-color: #0AA653;
+    height: 40px;
+    width: 150px;
+    border-radius: 50px;
+}
+
+.card-link:hover{
+    background-color: #0CC653;
+}
+
+.card-link a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+}
+
+.button-swiper{
+    color: #fff !important;
+    background-color: #0AA653;
+    margin: 24rem 4rem 0 4rem !important;
+    height: 100px !important;
+}
+.button-swiper2{
+   color: #fff !important;
+    background-color: #0AA653;
+    margin: 52rem 4rem 0 4rem !important;
+    height: 100px !important;
+}
+.button-swiper3{
+   color: #fff !important;
+    background-color: #0AA653;
+    margin: 78rem 4rem 0 4rem !important;
+    height: 100px !important;
+}
+.slide-final{
+    margin-right: 100px !important;
+}
+ 
+
+
+/*Termina SLIDER DE PRODUCTOS EN OFERTA*/
+
+/*Button WHATS APP FIXED*/
+
+.wsp-button{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #0AA653;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+    box-shadow: 0 1px 10px;
+    transition: background-color 0.5s;
+}
+.wsp-button:hover{
+    background-color: #fff;
+    color: #0AA653;
+}
+
+/*Button WHATS APP FIXED TERMINA*/
+
+.section2{
+    justify-content: center;
+}
+
+
+.info-contacto{
+    width: 80%;
+    height: 150px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    margin: 2rem 0 2rem 0;
+}
+
+.tel, .email, .ubicacion, .terminos-condiciones, i p{
+    font-size: 20px;
+    font-style: normal;
+    color: #0D1348;
+}
+.tel, .email, .ubicacion, .terminos-condiciones, i {
+    text-align: center;
+}
+.tel, .email, .ubicacion {
+    border-right: 1px solid #E5E5E5;
+    padding-right: 15px;
+}
+
+
+
+/*Comienza FOOTER INDEX*/
+
+.footer-content{
+    width: 100vw;
+    height: 200px;
+    background-color: #E5E5E5;
+    border-top: 1px solid #0D1348;
+}
+
+.logo-footer{
+    width: 160px;
+    position: relative;
+    left: 30px;
+    bottom: -1rem;   
+}
+
+.info-extra{
+    flex-direction: column;
+    padding-left: 15rem;
+    margin-top: -1.9rem;
+}
+
+.info-extra a{
+    margin-bottom: 10px;
+    color: #0D1348;
+    text-decoration: none;
+}
+.info-extra a:hover{
+    text-decoration: underline;
+}
+
+
+.info-extra p{
+    font-weight: 700;
+    color: #0AA653;
+}
+
+
+.copyright{
+    width:100vw;
+    height: 40px;
+    border-top: 1px solid #0D1348;
+    background-color: #E5E5E5;
+    text-align: center;
+}
+
+
+
+
+/*Termina FOOTER INDEX*/
+
+@media (max-width: 900px){
+    
+    .contenedor-sliders1{
+        margin-left: 1.5rem;
+    }
+    
+    .navbar-brand{
+        display: none ;
+    }
+
+    .dropdown-menu{
+        margin-left: -5px !important;
+        width: 25rem;
+    }
+    .adds{
+        width: 80%;
+    }
+    .adds p{
+        display: none;
+    }
+    
+    .button-swiper, .button-swiper2, .button-swiper3{
+        display: none !important;
+
+    }
+    .info-contacto{
+        display: none;
+    }
+    .tel, .email, .ubicacion, .terminos-condiciones{
+        display: none;
+    }
+    .buscador button{
+        margin-right: 18px;
+    }
+    .navbar{
+        margin-left: -10px;
+    }
+    .copyright {
+        width: 100vw !important;
+        margin-top: -13px;
+    }
+    .copyright p{
+        font-size: 12px;
+    }
+    .add-to-cart{
+        font-size: 15px
+    }
+    .accordion{
+        position: absolute;
+        z-index: 100;
+    }
+    .accordion-button{
+        width: 98vw !important;
+    }    
+    .accordion-item{
+        width: 98vw !important;
+    }
+    .section-pages{
+        position: relative;
+        right: 0.4rem;
+        top: 130px;
+        width: 98vw !important;
+    }
+
+    .footer-content-pags{
+        display: none;
+    }
+
+    .menu-des{
+        display: block;
+    }
+    .icons{
+        display: none;
+    }
+    
+    .cart{
+        top: 1.89rem;
+        right: 32rem;
+    }
+}
+
+
+@media (min-width: 1600px){
+    .cart{
+     left: 500px;
+    }
+    .button-swiper{
+        margin-top: 41rem !important;
+        margin-right: 9.5rem !important;
+    }
+    .button-swiper2{
+        margin-top: 15rem !important;
+        margin-right: 9.5rem !important;
+    }
+    .button-swiper3{
+        margin-top: 67rem !important;
+        margin-right: 9.5rem !important;
+    }
+}
+
+
+/*----------------------------COMIENZAN LAS SECCIONES---------------------------------*/
+
+/*RESMAS*/
+
+/*NAV DE PAGES*/
+
+.pages-nav{
+    width: 17rem;
+    height: 100%;
+    margin-top: 16px;
+    border-right: 1px solid #8E8E8E;
+}
+
+.accordion-item{
+    width: 256px;
+    margin-left: 5px;
+}
+
+.accordion-button{
+    background-color: #0D1348 !important;
+    color: #fff !important;
+}
+.accordion-button i{
+    margin-right: 6px;
+}
+
+.accordion-body{
+    background-color: #E5E5E5;
+    width: 98%;
+    margin-left: 1%;
+}
+.accordion-body a{
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+.accordion-body a:hover{
+    transform: scale(1.1);
+}
+
+/*FIN DE NAV DE PAGES*/
+
+.section-pages{
+    width: 78vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-left: 10px;
+}
+.contenedor2{
+    margin-top: 1rem;
+}
+
+.pages-title{
+    padding: 10px 0 0 26px;
+    color: #0D1348;
+}
+
+.card-product{
+    width: 14rem;
+    height: 23rem;
+    width: 18rem;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px 1px #8E8E8E ;
+    position: relative;
+    float: left;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+.card-product:hover{
+    transform: scale(1.05);
+}
+
+.card-product img{
+    margin-top: -30px;
+    margin-right: 10px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    height: 164px;
+    width: 224.68px;
+}
+.card-product p{
+    font-size: 16px;
+    padding-left: 5px;
+    margin-left: 8px;
+}
+.card-product .add-to-cart{
+    height: 2rem;
+    width: 10rem;
+    border: 2px solid #0AA653;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #0AA653;
+    position: absolute;
+    bottom: 20px;
+    left: 4rem;
+    transition: background-color 0.3s;
+    justify-content: center;
+    align-items: center;
+}
+.card-product .add-to-cart:hover{
+    background-color: #0AA653;
+}
+
+.card-product .add-to-cart i{
+    position: relative;
+    bottom: 1.6rem;
+    font-size: 20px;
+    color: #fff;
+    display: none;
+    transition: display 0.3s;
+}
+.card-product .add-to-cart:hover i {
+    display: block;
+}
+
+/*Comienza FOOTER PAGS*/
+
+.footer-pags{
+    margin: 1rem 0 0 10px;
+    display: block;
+}
+.footer-content-pags{
+    height: 200px;
+    background-color: #E5E5E5;
+    border-top: 1px solid #0D1348;
+}
+
+.logo-footer{
+    width: 160px;
+    position: relative;
+    left: 30px;
+    bottom: -1rem;   
+}
+
+.info-extra{
+    flex-direction: column;
+    padding-left: 15rem;
+    margin-top: -1.9rem;
+}
+
+.info-extra a{
+    margin-bottom: 10px;
+    color: #0D1348;
+    text-decoration: none;
+}
+.info-extra a:hover{
+    text-decoration: underline;
+}
+
+
+.info-extra p{
+    font-weight: 700;
+    color: #0AA653;
+}
+
+
+.copyright2{
+    width: 78vw;
+    height: 40px;
+    border-top: 1px solid #0D1348;
+    background-color: #E5E5E5;
+    text-align: center;
+}
+
+/*Termina FOOTER PAGS*/
+
+/*------------------CARRITO-----------------*/
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70% !important;
+    
+}
+
+.close {
+    color: #FF0000;
+    width: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.pedido{
+    height: 2rem;
+    width: 20rem;
+    border: 2px solid #0AA653;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #0AA653;
+    margin: 0 auto;
+    transition: background-color 0.3s;
+}
+
+.pedido p{
+    color: #0AA653;
+}
+.pedido:hover{
+    background-color: #0AA653;
+}
+
+.pedido i{
+    position: relative;
+    bottom: 1.7rem;
+    font-size: 20px;
+    color: #fff;
+    display: none;
+    transition: display 0.3s;
+}
+.pedido:hover i {
+    display: block;
+}
+
+
+.producto-en-carrito button {
+    background-color: #dc3545;
+    color: #fff; 
+    padding: 5px 10px; 
+    border: none;
+    cursor: pointer; 
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .producto-en-carrito button:hover {
+    background-color: #bd2130;
+}
+
+
+.cart {
+    position: relative;
+  }
+  
+  .indicador-carrito {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #0AA653;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+    display: none; /* Para ocultar inicialmente el indicador */
+  }
+  
+
+@media only screen and (max-width: 600px) {
+    
+  
+    #carritoContenido {
+      padding: 10px;
+    }
+
+    .modal-content{
+        width: 100% !important;
+    }
+    .close{
+        width: 50px;
+    }
+
+  }
