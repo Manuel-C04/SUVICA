@@ -183,14 +183,3 @@ function realizarCompra() {
   const enlaceWhatsApp = `https://wa.me/54351158789853?text=${encodeURIComponent(mensajePedido)}`;
   window.open(enlaceWhatsApp, '_blank');
 }
-
-
-
-
-
-
-
-
-
-
-
