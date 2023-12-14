@@ -6,7 +6,7 @@ let swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
   
-  // init: false,
+
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -24,9 +24,9 @@ let swiper = new Swiper(".mySwiper", {
       slidesPerView: 2,
       spaceBetween: 40,
     },
-    920: {
-      slidesPerView: 1,
-      spaceBetween: 40,
+    380: {
+      slidesPerView: 2,
+      spaceBetween: 50,
     },
     1240: {
       slidesPerView: 4,
