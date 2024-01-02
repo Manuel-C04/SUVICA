@@ -22,9 +22,11 @@ body{
     font-style: normal;
     font-weight: 300;
     margin-right: 20px;
+    margin-left: 10px;
 }
 .icons a:hover{
     text-decoration: underline;
+
 }
 
 .cart{
@@ -73,7 +75,7 @@ body{
 .navbar .navbar-brand{
     margin-left: 30px;
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .navbar .navbar-brand:hover{
@@ -147,7 +149,7 @@ body{
 /*Comienza CARRUSEL DE IMAGENES PROMOCIONALES*/
 
 .carousel-item img{
-    height: 250px;
+    height: 300px;
 }
 /*Termina CARRUSEL DE IMAGENES PROMOCIONALES*/
 
@@ -213,8 +215,8 @@ section{
     font-size: 40px;
 }
 .swiper-slide {
-    width: 18rem !important;
-    height: 22rem !important;
+    width: 20rem !important;
+    height: 23rem !important;
     background-color: #fff;
     position: relative;
     margin-right: 10px !important;    
@@ -256,24 +258,7 @@ section{
     top: 3px;
 }
 
-.button-swiper{
-    color: #fff !important;
-    background-color: #0AA653;
-    margin: 26rem 3.7rem 0 4.5rem !important;
-    height: 100px !important;
-}
-.button-swiper2{
-    color: #fff !important;
-    background-color: #0AA653;
-    margin: 54rem 3.7rem 0 4.5rem !important;
-    height: 100px !important;
-}
-.button-swiper3{
-   color: #fff !important;
-    background-color: #0AA653;
-    margin: 82rem 3.7rem 0 4.5rem !important;
-    height: 100px !important;
-}
+
 
  
 
@@ -516,20 +501,10 @@ section{
 
 @media (min-width: 1600px){
     .cart{
-     left: 500px;
-    }
-    .button-swiper{
-        margin: 43rem 6.5rem 0 7.3rem !important;
-    }
-    .button-swiper2{
-        margin: 15rem 6.5rem 0 7.3rem !important;
-    }
-    .button-swiper3{
-        margin: 71rem 6.5rem 0 7.3rem !important;
-        
+     left: 650px;
     }
     .section-pages{
-        width: 100% !important;
+        width: 80vw !important;
     }
 }
 
@@ -592,7 +567,6 @@ section{
 }
 
 .card-product{
-    width: 14rem;
     height: 23rem;
     width: 18rem;
     margin-left: 30px;
