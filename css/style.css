@@ -12,7 +12,7 @@ body{
     color: #000;
     position: relative;
     top: 90px;
-    left: 50px;
+    left: 160px;
 }
 
 .icons a{
@@ -32,8 +32,8 @@ body{
 .cart{
     font-size: 25px;
     position: relative;
-    margin-left: 52rem;
-    top: 85px;
+    margin-left: 39rem;
+    top: 36px;
     width: 40px;
     height: 40px;
     line-height: 10px;
@@ -50,7 +50,7 @@ body{
 .logo img{
     width: 160px;
     position: absolute;
-    left: 60px;
+    left: 170px;
     top: 30px;
 }
 
@@ -69,7 +69,7 @@ body{
 .navbar{
     height: 55px; 
     position: relative;
-    left: 22px;
+    left: 129.5px;
 }
 
 .navbar .navbar-brand{
@@ -151,6 +151,8 @@ body{
 .carousel-item img{
     height: 300px;
 }
+
+
 /*Termina CARRUSEL DE IMAGENES PROMOCIONALES*/
 
 /*Informacion ADICIONAL (Envios, sitio seguro, redes)*/
@@ -203,16 +205,17 @@ section{
 /*Comienza SLIDER DE PRODUCTOS EN OFERTA*/
 
 .contenedor-sliders1{
-    height: 25rem;
-    width: 84vw;
+    width: 85vw;
     margin: 3rem auto;
     
 } 
 
 .title{
     color: #0D1348;
-    font-weight: 700;
-    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    font-size: 50px;
+    text-transform: uppercase;
 }
 .swiper-slide {
     width: 20rem !important;
@@ -224,14 +227,15 @@ section{
 
 
 .swiper-slide img {
-    margin-left: 22px;
+    margin: 30px 0 0 60px;
     border-radius: 10px;
-    height: 12rem;
+    height: 8rem;
 }
 
 .card-title{
     position: relative;
-    left: 5px;
+    left: 10px;
+    top: 30px;
     font-size: 20px;
 }
 
@@ -239,7 +243,7 @@ section{
     text-align: center;
     position: relative;
     left: 6.4rem;
-    top: 2rem;
+    top: 5rem;
     background-color: #0AA653;
     height: 40px;
     width: 150px;
@@ -374,7 +378,7 @@ section{
 
 /* Ancho y color del scrollbar */
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 16px;
   }
   
   ::-webkit-scrollbar-track {
@@ -382,19 +386,25 @@ section{
   }
   
   ::-webkit-scrollbar-thumb {
-    background-color: #0D1348;
+    background-color: #0AA653;
     border-radius: 6px;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background-color: #0D1100;
+    background-color: #0BB653;
   }
   
 
 @media (max-width: 900px){
-    
+    .logo img{
+        left: 20px;
+        width: 250px;
+    }
+    .navbar{
+        left: -10px;
+    }
     .contenedor-sliders1{
-        margin: 0 auto;
+        margin: 10 auto;
         width: 90%;
     }
     
@@ -403,7 +413,16 @@ section{
         height: 16rem !important;
     }
     .swiper-slide img{
-        height: 8rem;
+        height: 5rem;
+    }
+
+    .swiper-slide .card-title p{
+        font-size: 13px;
+        display: block;
+        width: 170px;
+    }
+    .swiper-slide .card-link{
+        margin-top: -35px;
     }
     .navbar-brand{
         display: none;
@@ -411,7 +430,8 @@ section{
     .card-link{
         width: 80px;
         height: 35px;
-        margin-top: -10px;
+        position: absolute;
+        top: 240px;
     }
     .card-link a{
         font-size: 16px;
@@ -420,7 +440,7 @@ section{
         font-size: 16px;
     }
     .dropdown-menu{
-        margin-left: -5px !important;
+        margin-left: 11px !important;
         width: 25rem;
     }
     .adds{
@@ -488,8 +508,8 @@ section{
     }
     
     .cart{
-        top: 1.89rem;
-        right: 32rem;
+        top: 2.5rem;
+        right: 20rem;
     }
 
     .title{
@@ -501,11 +521,11 @@ section{
 
 @media (min-width: 1600px){
     .cart{
-     left: 650px;
+     left: 500px;
     }
     .section-pages{
         width: 80vw !important;
-    }
+    }   
 }
 
 
@@ -588,14 +608,12 @@ section{
     margin-top: -30px;
     margin-right: 10px;
     margin-left: 30px;
-    margin-bottom: 30px;
     height: 164px;
     width: 224.68px;
 }
 .card-product p{
     font-size: 16px;
-    padding-left: 5px;
-    margin-left: 8px;
+    margin: 0 0 20px 10px;
 }
 .card-product .add-to-cart{
     height: 2rem;
@@ -631,7 +649,6 @@ section{
 
 .footer-pags{
     margin: 1rem 0 0 10px;
-    display: block;
 }
 .footer-content-pags{
     height: 200px;
@@ -802,4 +819,32 @@ section{
         width: 50px;
     }
 
-  }
+}
+
+#indicadorCarrito {
+    position: absolute;
+    transform: translate(0%, -80%); /* Centra completamente */
+    background-color: green;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.cartel-agregado {
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 128, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    z-index: 1000;
+    display: none; /* Ocultamos inicialmente el cartel */
+}
+  
+
+

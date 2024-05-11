@@ -20,20 +20,20 @@ let swiper = new Swiper(".mySwiper", {
       slidesPerView: 3,
       spaceBetween: 20,
     },
-    680: {
-      slidesPerView: 2,
+    768: {
+      slidesPerView: 3.5,
       spaceBetween: 40,
     },
     380: {
-      slidesPerView: 3.5,
+      slidesPerView: 2,
       spaceBetween: 50,
     },
-    1240: {
-      slidesPerView: 4,
+    1440: {
+      slidesPerView: 3.6  ,
       spaceBetween: 50,
     },
     1800: {
-      slidesPerView: 5.5,
+      slidesPerView: 5,
       spaceBetween: 50,
     },
   } 
@@ -67,12 +67,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
       agregarAlCarrito(id, nombreProducto, imagenSrc);
       incrementarContadorIndicador();
+      mostrarCartelAgregado();
     });
   });
 
   function incrementarContadorIndicador() {
     const indicadorCarrito = document.getElementById("indicadorCarrito");
     indicadorCarrito.style.display = "block";
+  }
+
+  function mostrarCartelAgregado() {
+    const cartelAgregado = document.getElementById("cartelAgregado");
+    cartelAgregado.style.display = "block";
+    setTimeout(function() {
+      cartelAgregado.style.display = "none";
+    }, 2000);
   }
 });
 
@@ -145,24 +154,28 @@ function cargarCarritoDesdeLocalStorage() {
 function actualizarLocalStorage() {
   const productosEnCarrito = document.getElementById("tablaCarrito").getElementsByTagName('tbody')[0].getElementsByClassName("producto-en-carrito");
   const carrito = [];
+  let totalProductos = 0;
 
   for (let i = 0; i < productosEnCarrito.length; i++) {
     const productoFila = productosEnCarrito[i];
     const id = productoFila.getAttribute("data-id");
     const nombre = productoFila.querySelector("p").innerText;
     const imagen = productoFila.querySelector("img").src;
-    const cantidad = productoFila.querySelector("input[type='number']").value;
+    const cantidad = parseInt(productoFila.querySelector("input[type='number']").value, 10);
 
     carrito.push({ id, nombre, imagen, cantidad });
+    totalProductos += cantidad;
   }
 
   localStorage.setItem('carrito', JSON.stringify(carrito));
 
   const indicadorCarrito = document.getElementById("indicadorCarrito");
-  const cantidadProductos = productosEnCarrito.length;
+  indicadorCarrito.textContent = totalProductos; 
 
-  if (cantidadProductos === 0) {
+  if (totalProductos === 0) {
     indicadorCarrito.style.display = "none";
+  } else {
+    indicadorCarrito.style.display = "block";
   }
 }
 
